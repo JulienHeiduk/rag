@@ -1,0 +1,14 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+streamlit>=1.35
+langchain>=0.2
+langchain-community>=0.2
+faiss-cpu>=1.8
+pypdf>=4.0
+sentence-transformers>=3.0
+transformers>=4.40
+accelerate>=0.30
+# GNN app
+networkx>=3.3
+plotly>=5.20
+scikit-learn>=1.4
