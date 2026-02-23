@@ -3,7 +3,7 @@ import tempfile
 
 import streamlit as st
 import torch
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -132,3 +132,4 @@ if query:
                 st.markdown(f"> {doc.page_content.strip()}")
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
+
